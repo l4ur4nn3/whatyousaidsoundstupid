@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0px auto;
+    max-width: 600px;
+    background-size: 25rem;
+    background-color: #a18a79;
+}
+
+body,
+body h1,
+body img,
+body h3,
+footer a,
+footer p,
+body div,
+body h2{
+    background-color: #addde6;
+}
+
+body{
+    padding: 1.5rem;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WYSSS</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link href="./src/output.css" rel="stylesheet" />
+    <!-- <link rel="icon" type="image/xcon" href="/src/comment-solid.ico"> -->
+    <link rel="icon" type="image/ico" href="/src/bubble-black.ico" media="(prefers-color-scheme:light)">
+    <link rel="icon" type="image/ico" href="/src/bubble-white.ico" media="(prefers-color-scheme:dark)">
+    <link rel="icon" type="image/ico" href="/src/bubble-neutral.ico" media="(prefers-color-scheme:no-preference)">
+  </head>
+  <body>
+    <h1
+      class="text-amber-900 font-extrabold tracking-widest text-2xl text-center lowercase"
+    >
+      What You Said Sounds Stupid
+    </h1>
+    <h2 class=" text-sm text-amber-900 mb-5 text-center">convertor</h2>
+    <img
+      class="w-1/2 mb-5"
+      src="./src/dfl7e4d-bfbb2832-4bc2-41d5-a372-baba3c376b11.png"
+    />
+    <h3 class="tracking-wide font-bold text-amber-900">Enter text :</h3>
+    <textarea
+      class="mt-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full block p-2.5"
+      placeholder="hello world"
+      id="inputText"
+      rows="4"
+      cols="50"
+      placeholder="Tapez votre texte ici..."
+    ></textarea>
+    <h3 class="tracking-wide mt-5 font-bold text-amber-900">
+      Alternated text :
+    </h3>
+    <textarea
+      class="mt-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full block p-2.5"
+      placeholder="hElLo WorLd"
+      id="outputText"
+      rows="4"
+      cols="50"
+      readonly
+    ></textarea>
+    <div id="buttons">
+      <button
+        class="mt-10 text-white bg-amber-900 hover:bg-amber-900 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+        onclick="copyText()"
+      >
+        <i class="mr-2.5 fa-solid fa-copy"></i>
+        Copy
+      </button>
+      <button
+        class="mt-10 text-white bg-amber-900 hover:bg-amber-900 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+        onclick="downloadImage()"
+      >
+        <i class="mr-2.5 fa-solid fa-file-arrow-down"></i>Download the pic with
+        it
+      </button>
+    </div>
+    <footer>
+      <p class="mt-10 text-sm tracking-wide w-full text-center">
+        <a
+          href="https://github.com/l4ur4nn3"
+          class="text-amber-900 hover:italic hover:underline"
+          >© l4ur4nn3 2024</a
+        >
+      </p>
+      <script src="./script.js"></script>
+      <script
+        src="https://kit.fontawesome.com/d74732e987.js"
+        crossorigin="anonymous"
+      ></script>
+      <!-- npx tailwindcss -i ./style.css -o ./src/output.css --watch -->
+    </footer>
+  </body>
+</html>
